@@ -40,3 +40,7 @@ npm run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## Details
+
+A running version of this app is deployed at netlify. Checkout [shop for phones](https://shop-for-phones.netlify.app/)
