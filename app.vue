@@ -113,6 +113,8 @@ body {
   background-color: #f5f5f5;
   padding: 0 16px;
   font-family: sans-serif;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .button-as-link {
