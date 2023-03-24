@@ -1,5 +1,5 @@
 <script setup>
-import { getImageSrc, getPhoneLabel, isNewRelease } from '../utils/phone';
+import { getImageSrc, getPhoneLabel, isNewRelease, getPhoneUrl } from '../utils/phone';
 
 defineProps({
   phoneList: {
@@ -19,21 +19,21 @@ defineProps({
         New
       </span>
       <div class="img-container">
-        <a href="/" tabindex="-1">
-          <img loading="lazy" alt="" :src="getImageSrc(phone.operating_system)" />
-        </a>
-      </div>
-      <div class="details-container">
-        <div>{{ phone.manufacturer }}</div>
-        <a href="/">
-          <span>
-            {{ getPhoneLabel(phone) }}
-          </span>
-          <span>
-            Check
-            <RightArrow />
-          </span>
-        </a>
+          <NuxtLink :href="getPhoneUrl(phone)" tabindex="-1">
+            <img loading="lazy" alt="" :src="getImageSrc(phone.operating_system)" />
+          </NuxtLink>
+        </div>
+        <div class="details-container">
+          <div>{{ phone.manufacturer }}</div>
+          <NuxtLink :href="getPhoneUrl(phone)">
+            <span>
+              {{ getPhoneLabel(phone) }}
+            </span>
+            <span>
+              Check
+              <RightArrow />
+            </span>
+          </NuxtLink>
       </div>
     </li>
   </ul>

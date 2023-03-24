@@ -13,3 +13,7 @@ export function isNewRelease (releaseDate) {
   const releaseDateObj = new Date(releaseDate);
   return releaseDateObj.getFullYear() >= 2021;
 }
+
+export function getPhoneUrl(phone) {
+  return '/phone/' + phone.default.split('_').join('/');
+}
