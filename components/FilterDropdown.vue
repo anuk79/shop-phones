@@ -25,7 +25,7 @@ const showDropdown = () => {
 
 const closeOnClickOutside = (e) => {
   e.stopPropagation();
-  if (e.target.id !== 'toggle-button-'+ props.filterName && !['option-text', 'option-checkbox',].includes(e.target.className)) {
+  if (e.target.id !== 'toggle-button-' + props.filterName && !['option-text', 'option-checkbox', 'option-label'].includes(e.target.className)) {
     show.value = false;
   }
 };
@@ -96,6 +96,7 @@ button:hover {
 .multiselect label {
   padding: 2px 0;
   display: inline-block;
+  width: 100%;
 }
 
 .multiselect label span {
