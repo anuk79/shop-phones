@@ -68,7 +68,7 @@ const resetFilters = () => {
   <Html>
 
   <Head>
-    <title>Shop for phones | KPN</title>
+    <title>Shop for phones | PhoneMart</title>
   </Head>
 
   </Html>
