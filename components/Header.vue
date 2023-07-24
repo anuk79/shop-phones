@@ -1,6 +1,6 @@
 <template>
   <header>
-    <h1>KPN: Shop Phones</h1>
+    <h1>PhoneMart: Shop Phones</h1>
     <nav>
       <ul>
         <li><nuxt-link to="/">Mobile</nuxt-link></li>
